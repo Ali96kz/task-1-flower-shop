@@ -1,8 +1,7 @@
 package com.epam.zhagparov;
 
-
-public class Collector {
-    public Bouquet collect(){
+public class Sorter{
+    public Bouquet sortByDate(Bouquet bouquet){
         throw new UnsupportedOperationException();
     }
 }

@@ -4,7 +4,7 @@ import com.epam.zhagparov.entity.Flower;
 
 import java.util.ArrayList;
 
-class Compare {
+public class Compare {
     public Flower comparator(ArrayList<Flower> flowers) {
         Flower flower = null;
         int max = -1;

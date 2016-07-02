@@ -9,9 +9,10 @@ public class Main {
         Finder finder = new Finder();
 
 
-        Bouquet bouquet =  collector.collect();
-        bouquet = sorter.sortByDate(bouquet);
-        Flower flower = finder.findFlower(45,16);
+        Bouquet bouquet =  collector.collect(6);
+        bouquet = sorter.sortByHeight(bouquet);
+        Flower flower = finder.findFlower(45,16, bouquet);
 
+        System.out.println(bouquet.toFormattedString());
     }
 }

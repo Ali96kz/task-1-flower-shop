@@ -12,10 +12,16 @@ public class Bouquet {
     public void addJewelery(Jewellery jewellery){
         jewelleries.add(jewellery);
     }
-    public void addFlowers(Flower flower){
+    public void addFlower(Flower flower){
         flowers.add(flower);
     }
-
+    public String toFormattedString(){
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int i = 0; i < flowers.size(); i++){
+            stringBuilder.append(flowers.get(i).getName()+"\n");
+        }
+        return stringBuilder.toString();
+    }
 
     public ArrayList<Flower> getFlowers() {
         return flowers;

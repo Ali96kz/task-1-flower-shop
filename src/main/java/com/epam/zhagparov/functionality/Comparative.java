@@ -1,11 +1,11 @@
-package com.epam.zhagparov;
+package com.epam.zhagparov.functionality;
 
 import com.epam.zhagparov.entity.Flower;
 
 import java.util.ArrayList;
 
-public class Compare {
-    public Flower comparator(ArrayList<Flower> flowers) {
+public class Comparative {
+    public Flower compare(ArrayList<Flower> flowers) {
         Flower flower = null;
         int max = -1;
         for (int i = 0; i < flowers.size(); i++) {

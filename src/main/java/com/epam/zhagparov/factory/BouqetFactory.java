@@ -1,21 +1,23 @@
-package com.epam.zhagparov;
+package com.epam.zhagparov.factory;
 
+import com.epam.zhagparov.entity.Bouquet;
 import com.epam.zhagparov.entity.Flower;
-import com.epam.zhagparov.entity.FlowerStore;
 
 public class BouqetFactory {
-    private FlowerStore flowerStore;
+    private FlowerFactory flowerFactory;
 
     public BouqetFactory() {
-        flowerStore = new FlowerStore();
+        flowerFactory = new FlowerFactory();
     }
 
     public Bouquet getRandomFillBouquet(int flowersNumber){
         Bouquet bouquet = new Bouquet();
 
+
         for(int i = 0; i < flowersNumber; i++){
-            Flower flower= flowerStore.getRandomFlower();
+            Flower flower = flowerFactory.getRandomFlower(600, 300, 10, 15);
             bouquet.addFlower(flower);
+
         }
 
         return bouquet;

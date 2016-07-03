@@ -1,5 +1,6 @@
-package com.epam.zhagparov;
+package com.epam.zhagparov.functionality;
 
+import com.epam.zhagparov.entity.Bouquet;
 import com.epam.zhagparov.entity.Flower;
 
 import java.util.ArrayList;

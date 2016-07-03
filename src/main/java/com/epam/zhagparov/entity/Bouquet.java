@@ -1,4 +1,4 @@
-package com.epam.zhagparov;
+package com.epam.zhagparov.entity;
 
 import com.epam.zhagparov.entity.Jewellery;
 import com.epam.zhagparov.entity.Flower;
@@ -9,19 +9,25 @@ public class Bouquet {
     private ArrayList<Flower> flowers = new ArrayList<Flower>();
     private ArrayList<Jewellery> jewelleries = new ArrayList<Jewellery>();
 
+
     public void addJewelery(Jewellery jewellery){
         jewelleries.add(jewellery);
     }
     public void addFlower(Flower flower){
         flowers.add(flower);
     }
+
     public String toFormattedString(){
         StringBuilder stringBuilder = new StringBuilder();
-        for(int i = 0; i < flowers.size(); i++){
-            stringBuilder.append(flowers.get(i).getName()+"\n");
+        stringBuilder.append("Name "+"Height "+" Price");
+
+        for(Flower flower : flowers){
+            stringBuilder.append(flower.getName()+flower.getHeight()+flower.getPrice()+"\n");
         }
+
         return stringBuilder.toString();
     }
+
 
     public ArrayList<Flower> getFlowers() {
         return flowers;
@@ -29,13 +35,5 @@ public class Bouquet {
 
     public void setFlowers(ArrayList<Flower> flowers) {
         this.flowers = flowers;
-    }
-
-    public ArrayList<Jewellery> getJewelleries() {
-        return jewelleries;
-    }
-
-    public void setJewelleries(ArrayList<Jewellery> jewelleries) {
-        this.jewelleries = jewelleries;
     }
 }

@@ -11,6 +11,8 @@ public class Main {
         Finder finder = new Finder();
         Bouquet bouquet =  collector.collect(6);
 
-        logger.info(bouquet.toFormattedString());
+        logger.info(bouquet.toFormattedString()+" \n");
+        logger.info(sorter.sortByHeight(bouquet).toFormattedString()+" \n");
+
     }
 }

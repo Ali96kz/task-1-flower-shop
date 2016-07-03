@@ -10,20 +10,21 @@ public class Sorter{
         ArrayList <Flower> values = bouquet.getFlowers();
         ArrayList<Flower> sortBouqet = new ArrayList<Flower>();
         Flower flower;
-        int max;
+        int max ;
 
         for(int i = 0; i < values.size(); i++){
             flower = values.get(i);
             max = flower.getHeight();
 
-            for(int j = i+1; j < values.size(); j++){
-                if(max < values.get(j).getHeight()){
+            for(int j = i+1; j < values.size() ; j++){
+                if(values.get(j).getHeight() > max) {
                     flower = values.get(j);
-                    values.remove(j);
+                    max = values.get(j).getHeight();
+
                 }
             }
-
-            sortBouqet.add(i, flower);
+            sortBouqet.add(flower);
+            flower.setHeight(-1);
         }
 
         bouquet.setFlowers(sortBouqet);

@@ -19,10 +19,9 @@ public class Bouquet {
 
     public String toFormattedString(){
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("\nName "+"Height "+" Price \n");
 
         for(Flower flower : flowers){
-            stringBuilder.append(flower.getName()+" "+flower.getHeight()+" "+flower.getPrice()+" \n");
+            stringBuilder.append(flower.getName()+" \n");
         }
 
         return stringBuilder.toString();

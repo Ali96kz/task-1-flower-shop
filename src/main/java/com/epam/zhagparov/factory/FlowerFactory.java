@@ -1,7 +1,9 @@
 package com.epam.zhagparov.factory;
 
 
+import com.epam.zhagparov.entity.AliveFlower;
 import com.epam.zhagparov.entity.Flower;
+import com.epam.zhagparov.entity.SyntheticFlower;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,7 +33,13 @@ public class FlowerFactory {
     }
 
     public Flower getRandomFlower(int maxPrice, int minPrice, int minHeight, int maxHeight){
-        Flower flower = new Flower();
+        Flower flower =null;
+
+        if(random.nextInt() % 2 == 0 ) {
+            flower = new AliveFlower();
+        }
+        else
+            flower = new SyntheticFlower();
 
         flower.setName(getRandomNameFlower());
         flower.setHeight(random.nextInt(maxHeight)+minHeight);

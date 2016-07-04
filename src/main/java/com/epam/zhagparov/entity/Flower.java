@@ -1,6 +1,6 @@
 package com.epam.zhagparov.entity;
 
-public  class Flower {
+public abstract class Flower {
     private String name;
     private int height;
     private int price;

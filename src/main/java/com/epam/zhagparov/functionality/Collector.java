@@ -6,11 +6,11 @@ import com.epam.zhagparov.factory.BouqetFactory;
 
 public class Collector {
 
-    public Bouquet collect(int flowersNumber){
+    public Bouquet collect(int flowersNumber, int jewelleryNumber){
         Bouquet bouquet;
 
         BouqetFactory bouqetFactory = new BouqetFactory();
-        bouquet = bouqetFactory.getRandomFillBouquet(flowersNumber);
+        bouquet = bouqetFactory.getRandomFillBouquet(flowersNumber, jewelleryNumber);
 
         return bouquet;
     }

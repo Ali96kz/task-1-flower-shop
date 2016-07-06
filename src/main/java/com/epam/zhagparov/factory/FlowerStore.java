@@ -25,7 +25,6 @@ public class FlowerStore {
 
     public String getRandomNameFlower(){
         String name =  values.get(random.nextInt(values.size())+1);
-        System.out.println(name);
         return name;
     }
     public Flower getRandomFlower(){

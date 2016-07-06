@@ -9,7 +9,7 @@ public class Main {
         Collector collector = new Collector();
         Sorter sorter = new Sorter();
         Finder finder = new Finder();
-        Bouquet bouquet =  collector.collect(6);
+        Bouquet bouquet =  collector.collect(6, 3);
 
 
         logger.info("Order bouqet "+bouquet.toFormattedString());

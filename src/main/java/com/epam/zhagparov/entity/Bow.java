@@ -2,17 +2,13 @@ package com.epam.zhagparov.entity;
 
 public class Bow extends Jewellery {
 
-    private String form;
     //medium, low, big and another
     private String size;
 
-    public String getForm() {
-        return form;
+    public Bow(String size) {
+        this.size = size;
     }
 
-    public void setForm(String form) {
-        this.form = form;
-    }
 
     public String getSize() {
         return size;

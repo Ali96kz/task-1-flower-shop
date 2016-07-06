@@ -1,6 +1,6 @@
 package com.epam.zhagparov.entity;
 
-public class Bant extends Jewellery {
+public class Bow extends Jewellery {
 
     private String form;
     //medium, low, big and another

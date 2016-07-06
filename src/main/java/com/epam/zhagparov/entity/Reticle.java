@@ -1,6 +1,6 @@
 package com.epam.zhagparov.entity;
 
-public class Ceils extends Jewellery {
+public class Reticle extends Jewellery {
     private int heught;
     private int width;
 

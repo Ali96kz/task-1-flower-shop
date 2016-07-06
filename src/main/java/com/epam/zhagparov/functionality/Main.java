@@ -12,8 +12,8 @@ public class Main {
         Bouquet bouquet =  collector.collect(6);
 
 
-        logger.info(bouquet.toFormattedString());
-        logger.info(sorter.sortByHeight(bouquet).toFormattedString()+" \n");
-        logger.info(finder.findFlower(9,12, bouquet).getName()+"\n");
+        logger.info("Order bouqet "+bouquet.toFormattedString());
+        logger.info("Sort By Height"+sorter.sortByHeight(bouquet).toFormattedString()+" \n");
+        logger.info("Find flower between 9 and 12"+finder.findFlower(9,12, bouquet).getName()+"\n");
     }
 }

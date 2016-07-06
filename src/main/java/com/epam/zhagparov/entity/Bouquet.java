@@ -1,13 +1,11 @@
 package com.epam.zhagparov.entity;
 
-import com.epam.zhagparov.entity.Jewellery;
-import com.epam.zhagparov.entity.Flower;
-
 import java.util.ArrayList;
+import java.util.List;
 
 public class Bouquet {
-    private ArrayList<Flower> flowers = new ArrayList<Flower>();
-    private ArrayList<Jewellery> jewelleries = new ArrayList<Jewellery>();
+    private List<Flower> flowers = new ArrayList<Flower>();
+    private List<Jewellery> jewelleries = new ArrayList<Jewellery>();
 
 
     public void addJewelery(Jewellery jewellery){
@@ -19,20 +17,21 @@ public class Bouquet {
 
     public String toFormattedString(){
         StringBuilder stringBuilder = new StringBuilder();
-
+        stringBuilder.append("\nName      Price   Height\n");
         for(Flower flower : flowers){
-            stringBuilder.append(flower.getName()+" \n");
+            stringBuilder.append(flower.getName()+" "+flower.getPrice()+" "+flower.getHeight()+"\n");
+
         }
 
         return stringBuilder.toString();
     }
 
 
-    public ArrayList<Flower> getFlowers() {
+    public List<Flower> getFlowers() {
         return flowers;
     }
 
-    public void setFlowers(ArrayList<Flower> flowers) {
+    public void setFlowers(List<Flower> flowers) {
         this.flowers = flowers;
     }
 }

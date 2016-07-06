@@ -3,31 +3,18 @@ package com.epam.zhagparov.functionality;
 import com.epam.zhagparov.entity.Bouquet;
 import com.epam.zhagparov.entity.Flower;
 
-import java.util.ArrayList;
+import java.util.*;
 
-public class Sorter{
+public class Sorter {
     public Bouquet sortByHeight(Bouquet bouquet){
-        ArrayList <Flower> values = bouquet.getFlowers();
-        ArrayList<Flower> sortBouqet = new ArrayList<Flower>();
-        Flower flower;
-        int max ;
-
-        for(int i = 0; i < values.size(); i++){
-            flower = values.get(i);
-            max = flower.getHeight();
-
-            for(int j = i+1; j < values.size() ; j++){
-                if(values.get(j).getHeight() > max) {
-                    flower = values.get(j);
-                    max = values.get(j).getHeight();
-
-                }
+        List<Flower> values = bouquet.getFlowers();
+        Comparator<Flower> flowerComparator = new Comparator<Flower>() {
+            public int compare(Flower o1, Flower o2) {
+                return o2.getHeight()-o1.getHeight();
             }
-            sortBouqet.add(flower);
-            flower.setHeight(-1);
-        }
-
-        bouquet.setFlowers(sortBouqet);
+        };
+        Collections.sort(values, flowerComparator);
         return  bouquet;
     }
+
 }

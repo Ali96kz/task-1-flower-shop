@@ -1,20 +1,20 @@
 package com.epam.zhagparov.entity;
 
 public class Reticle extends Jewellery {
-    private int heught;
+    private int height;
     private int width;
 
-    public Reticle(int heught, int width) {
-        this.heught = heught;
+    public Reticle(int height, int width) {
+        this.height = height;
         this.width = width;
     }
 
-    public int getHeught() {
-        return heught;
+    public int getHeight() {
+        return height;
     }
 
-    public void setHeught(int heught) {
-        this.heught = heught;
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     public int getWidth() {

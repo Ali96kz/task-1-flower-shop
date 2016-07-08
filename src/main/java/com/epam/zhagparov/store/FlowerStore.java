@@ -1,4 +1,4 @@
-package com.epam.zhagparov.factory;
+package com.epam.zhagparov.store;
 
 import com.epam.zhagparov.entity.AliveFlower;
 import com.epam.zhagparov.entity.Flower;

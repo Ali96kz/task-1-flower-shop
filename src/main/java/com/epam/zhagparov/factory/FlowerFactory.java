@@ -1,12 +1,9 @@
 package com.epam.zhagparov.factory;
 
 
-import com.epam.zhagparov.entity.AliveFlower;
 import com.epam.zhagparov.entity.Flower;
-import com.epam.zhagparov.entity.SyntheticFlower;
+import com.epam.zhagparov.store.FlowerStore;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Random;
 
 public class FlowerFactory {

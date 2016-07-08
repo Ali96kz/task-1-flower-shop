@@ -26,11 +26,11 @@ public class Bouquet {
                 stringBuilder.append(flower.getName() + " " + flower.getPrice() + " " + flower.getHeight() + " Synthetic Flower\n");
             }
         }
-        stringBuilder.append("Reticles \n Name  Price  Colour  Size   \n");
+        stringBuilder.append(" \n Name  Price  Colour  Size   \n");
         for(Jewellery jewellery : jewelleries){
             if(jewellery instanceof Bow){
                 Bow bow  = (Bow) jewellery;
-                stringBuilder.append("Bow "+bow.getSize()+" "+bow.getPrice()+" "+bow.getColour()+"\n");
+                stringBuilder.append("Bow "+bow.getPrice()+" "+bow.getColour()+" "+bow.getSize()+"\n");
             }
             else{
                 Reticle reticle = (Reticle) jewellery;

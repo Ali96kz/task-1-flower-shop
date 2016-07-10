@@ -3,7 +3,7 @@ package com.epam.zhagparov.flowershop.entity;
 public abstract class OrderItem {
     private int id;
     private int price;
-
+    private int count;
     private String description;
     private String madePlace;
     private String name;
@@ -12,6 +12,13 @@ public abstract class OrderItem {
     public OrderItem() {
     }
 
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 
     public String getColour() {
         return colour;

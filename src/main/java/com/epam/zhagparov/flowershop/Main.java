@@ -7,6 +7,7 @@ import com.epam.zhagparov.flowershop.service.Sorter;
 import com.sun.istack.internal.logging.Logger;
 
 import java.util.StringTokenizer;
+import java.util.logging.Level;
 
 public class Main {
     final static Logger logger = Logger.getLogger(Main.class);
@@ -20,12 +21,12 @@ public class Main {
 
         logger.info("Order bouqet \n");
         logger.info(bouquet.toFormattedString());
+        logger.log(Level.ALL, "sad");
 
         logger.info("Sort By Height \n");
         logger.info(sorter.sortByHeight(bouquet).toFormattedString()+" \n");
 
         logger.info("Find flower between 9 and 12 \n");
         logger.info(finder.findFlower(9,12, bouquet).getName()+"\n");
-
     }
 }

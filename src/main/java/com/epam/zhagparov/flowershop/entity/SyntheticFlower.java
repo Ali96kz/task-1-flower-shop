@@ -1,10 +1,10 @@
-package com.epam.zhagparov.entity;
+package com.epam.zhagparov.flowershop.entity;
 
-public class SyntheticFlower extends Flower {
+public class SyntheticFlower extends PresentFlower{
     private String material;
 
-    public SyntheticFlower(String material) {
-        this.material = material;
+    public SyntheticFlower() {
+
     }
 
     public String getMaterial() {

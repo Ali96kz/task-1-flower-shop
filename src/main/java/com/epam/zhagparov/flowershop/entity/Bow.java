@@ -1,4 +1,4 @@
-package com.epam.zhagparov.entity;
+package com.epam.zhagparov.flowershop.entity;
 
 public class Bow extends Jewellery {
 

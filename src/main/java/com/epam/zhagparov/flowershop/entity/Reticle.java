@@ -1,12 +1,10 @@
-package com.epam.zhagparov.entity;
+package com.epam.zhagparov.flowershop.entity;
 
 public class Reticle extends Jewellery {
     private int height;
     private int width;
 
-    public Reticle(int height, int width) {
-        this.height = height;
-        this.width = width;
+    public Reticle() {
     }
 
     public int getHeight() {

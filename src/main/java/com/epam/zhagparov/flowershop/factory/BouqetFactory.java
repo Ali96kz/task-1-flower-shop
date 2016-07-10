@@ -1,22 +1,18 @@
-package com.epam.zhagparov.factory;
+package com.epam.zhagparov.flowershop.factory;
 
-import com.epam.zhagparov.entity.Bouquet;
-import com.epam.zhagparov.entity.Flower;
-import com.epam.zhagparov.entity.Jewellery;
+import com.epam.zhagparov.flowershop.entity.Bouquet;
+import com.epam.zhagparov.flowershop.entity.Jewellery;
+import com.epam.zhagparov.flowershop.entity.PresentFlower;
 
 public class BouqetFactory {
-    private FlowerFactory flowerFactory;
-    private JewelleryFactory jewelleryFactory;
-    public BouqetFactory() {
-        flowerFactory = new FlowerFactory();
-        jewelleryFactory = new JewelleryFactory();
-    }
+    private PresentFlowerFactory presentFlowerFactory = new PresentFlowerFactory();
+    private JewelleryFactory jewelleryFactory= new JewelleryFactory();
 
     public Bouquet getRandomFillBouquet(int flowersNumber, int jewelleryNumber){
         Bouquet bouquet = new Bouquet();
 
         for(int i = 0; i < flowersNumber; i++){
-            Flower flower = flowerFactory.getRandomFlower(600, 300, 10, 15);
+            PresentFlower flower =  presentFlowerFactory.getRandomFlower(600, 300, 10, 15);
             bouquet.addFlower(flower);
         }
         for(int i = 0; i < jewelleryNumber; i++){

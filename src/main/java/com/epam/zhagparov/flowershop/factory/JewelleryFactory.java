@@ -1,8 +1,8 @@
-package com.epam.zhagparov.factory;
+package com.epam.zhagparov.flowershop.factory;
 
-import com.epam.zhagparov.entity.Bow;
-import com.epam.zhagparov.entity.Jewellery;
-import com.epam.zhagparov.entity.Reticle;
+import com.epam.zhagparov.flowershop.entity.Bow;
+import com.epam.zhagparov.flowershop.entity.Jewellery;
+import com.epam.zhagparov.flowershop.entity.Reticle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,7 @@ public class JewelleryFactory {
             jewellery = new Bow("medium");
         }
         else{
-            jewellery = new Reticle(random.nextInt(200)+50, random.nextInt(200)+50);
+            jewellery = new Reticle();
         }
         jewellery.setPrice(random.nextInt(1000)+100);
         jewellery.setColour("Blue");

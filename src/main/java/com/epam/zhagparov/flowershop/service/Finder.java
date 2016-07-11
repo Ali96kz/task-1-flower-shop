@@ -6,7 +6,6 @@ import com.epam.zhagparov.flowershop.entity.PresentFlower;
 
 import java.util.List;
 
-
 public class Finder {
     public Flower findFlower(int min, int max, Bouquet bouquet) {
         PresentFlower flower = null;

@@ -21,7 +21,6 @@ public class Main {
 
         logger.info("Order bouqet \n");
         logger.info(bouquet.toFormattedString());
-        logger.log(Level.ALL, "sad");
 
         logger.info("Sort By Height \n");
         logger.info(sorter.sortByHeight(bouquet).toFormattedString()+" \n");

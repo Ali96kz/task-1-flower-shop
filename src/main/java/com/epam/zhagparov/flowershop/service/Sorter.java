@@ -9,6 +9,7 @@ import java.util.*;
 public class Sorter {
     public Bouquet sortByHeight(Bouquet bouquet){
         List<PresentFlower> values = bouquet.getFlowers();
+
         Comparator<PresentFlower> flowerComparator = new Comparator<PresentFlower>() {
             public int compare(PresentFlower o1, PresentFlower o2) {
                 return o2.getHeight()-o1.getHeight();

@@ -1,6 +1,6 @@
 package com.epam.zhagparov.flowershop.entity;
 
-public abstract class OrderItem {
+public abstract class BaseEntity {
     private int id;
     private int price;
     private int count;
@@ -9,7 +9,7 @@ public abstract class OrderItem {
     private String name;
     private String colour;
 
-    public OrderItem() {
+    public BaseEntity() {
     }
 
     public int getCount() {

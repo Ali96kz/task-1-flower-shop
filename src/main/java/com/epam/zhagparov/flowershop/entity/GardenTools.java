@@ -2,7 +2,7 @@ package com.epam.zhagparov.flowershop.entity;
 
 
 
-public  class GardenTools extends OrderItem{
+public  class GardenTools extends BaseEntity {
     private int garantDay;
 
     public int getGarantDay() {

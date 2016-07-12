@@ -20,7 +20,7 @@ public class Bouquet {
     public String toFormattedString(){
         StringBuilder stringBuilder = new StringBuilder();
         for(PresentFlower flower : flowers){
-                stringBuilder.append(flower.getName() + " " + flower.getPrice()+"\n");
+                stringBuilder.append(flower.getName() + " " + flower.getPrice()+" "+flower.getHeight()+"\n");
         }
         for(Jewellery jewellery : jewelleries){
                 stringBuilder.append(jewellery.getPrice()+" "+jewellery.getColour()+"\n");

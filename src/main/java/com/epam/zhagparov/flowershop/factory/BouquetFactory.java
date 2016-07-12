@@ -4,7 +4,7 @@ import com.epam.zhagparov.flowershop.entity.Bouquet;
 import com.epam.zhagparov.flowershop.entity.Jewellery;
 import com.epam.zhagparov.flowershop.entity.PresentFlower;
 
-public class BouqetFactory {
+public class BouquetFactory {
     private PresentFlowerFactory presentFlowerFactory = new PresentFlowerFactory();
     private JewelleryFactory jewelleryFactory= new JewelleryFactory();
 

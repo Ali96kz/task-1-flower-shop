@@ -16,8 +16,8 @@ public class Bouquet {
     public void addFlower(PresentFlower presentFlower){
         flowers.add(presentFlower);
     }
-
-    public String toFormattedString(){
+    @Override
+    public String toString(){
         StringBuilder stringBuilder = new StringBuilder();
         for(PresentFlower flower : flowers){
                 stringBuilder.append(flower.getName() + " " + flower.getPrice()+" "+flower.getHeight()+"\n");
@@ -35,5 +35,13 @@ public class Bouquet {
 
     public void setFlowers(List<PresentFlower> flowers) {
         this.flowers = flowers;
+    }
+
+    public List<Jewellery> getJewelleries() {
+        return jewelleries;
+    }
+
+    public void setJewelleries(List<Jewellery> jewelleries) {
+        this.jewelleries = jewelleries;
     }
 }

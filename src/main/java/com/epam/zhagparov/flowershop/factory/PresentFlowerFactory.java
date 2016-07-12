@@ -20,8 +20,8 @@ public class PresentFlowerFactory {
         PresentFlower presentFlower;
 
         presentFlower = flowerStore.getRandomFlower();
-        presentFlower.setHeight(random.nextInt(maxHeight)+minHeight);
-        presentFlower.setPrice(random.nextInt(maxPrice)+ minPrice);
+        presentFlower.setHeight(minHeight+random.nextInt(maxHeight-minHeight+1));
+        presentFlower.setPrice(minPrice+random.nextInt(maxPrice-minPrice+1));
 
         return presentFlower;
     }

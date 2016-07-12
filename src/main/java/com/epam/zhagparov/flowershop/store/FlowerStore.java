@@ -21,6 +21,7 @@ public class FlowerStore {
         String name =  values.get(random.nextInt(4)+0);
         return name;
     }
+
     public PresentFlower getRandomFlower(){
         PresentFlower presentFlower = new AliveFlower();
         presentFlower.setName(getRandomNameFlower());

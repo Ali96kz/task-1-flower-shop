@@ -12,7 +12,7 @@ public class BouquetFactory {
         Bouquet bouquet = new Bouquet();
 
         for(int i = 0; i < flowersNumber; i++){
-            PresentFlower flower =  presentFlowerFactory.getRandomFlower(600, 300, 10, 15);
+            PresentFlower flower =  presentFlowerFactory.getRandomFlower(600, 300, 31, 70);
             bouquet.addFlower(flower);
         }
         for(int i = 0; i < jewelleryNumber; i++){

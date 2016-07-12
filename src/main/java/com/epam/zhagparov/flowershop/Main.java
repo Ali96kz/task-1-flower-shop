@@ -17,10 +17,10 @@ public class Main {
         Bouquet bouquet = bouquetFactory.getRandomFillBouquet(6, 3);
 
         logger.info("Order bouqet \n");
-        logger.info(bouquet.toFormattedString());
+        logger.info(bouquet.toString());
 
         logger.info("Sort By Height \n");
-        logger.info(sorter.sortByHeight(bouquet).toFormattedString()+" \n");
+        logger.info(sorter.sortByHeight(bouquet).toString()+" \n");
 
         logger.info("Find flower between 9 and 12 \n");
         logger.info(finder.findFlower(9,12, bouquet).getName()+"\n");

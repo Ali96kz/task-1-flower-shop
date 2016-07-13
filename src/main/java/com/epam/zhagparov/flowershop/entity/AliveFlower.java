@@ -1,6 +1,6 @@
 package com.epam.zhagparov.flowershop.entity;
 
-public class AliveFlower extends PresentFlower{
+public class AliveFlower extends PresentFlower {
     private int aliveDay;
 
     public AliveFlower() {

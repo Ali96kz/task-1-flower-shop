@@ -1,8 +1,9 @@
 package com.epam.zhagparov.flowershop.entity;
 
-public  class GardenFlower extends Flower {
+public class GardenFlower extends Flower {
     private String type;
-    public GardenFlower(){
+
+    public GardenFlower() {
 
     }
 

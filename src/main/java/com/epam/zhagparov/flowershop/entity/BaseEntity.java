@@ -27,6 +27,7 @@ public abstract class BaseEntity {
     public void setColour(String colour) {
         this.colour = colour;
     }
+
     public int getPrice() {
         return price;
     }

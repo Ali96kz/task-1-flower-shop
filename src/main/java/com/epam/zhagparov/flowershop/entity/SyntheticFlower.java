@@ -1,6 +1,6 @@
 package com.epam.zhagparov.flowershop.entity;
 
-public class SyntheticFlower extends PresentFlower{
+public class SyntheticFlower extends PresentFlower {
     private String material;
 
     public SyntheticFlower() {

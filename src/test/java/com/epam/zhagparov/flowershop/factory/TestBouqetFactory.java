@@ -6,6 +6,7 @@ import com.epam.zhagparov.flowershop.entity.PresentFlower;
 import com.epam.zhagparov.flowershop.factory.BouquetFactory;
 import org.junit.Test;
 
+import java.io.InputStream;
 import java.util.Random;
 
 import static junit.framework.TestCase.assertTrue;

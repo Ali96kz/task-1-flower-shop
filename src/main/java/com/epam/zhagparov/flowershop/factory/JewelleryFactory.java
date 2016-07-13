@@ -11,15 +11,15 @@ import java.util.Random;
 public class JewelleryFactory {
     private List<Jewellery> values = new ArrayList<Jewellery>();
     private Random random = new Random(System.currentTimeMillis());
-    public Jewellery getRandomJewellery(){
+
+    public Jewellery getRandomJewellery() {
         Jewellery jewellery;
-        if(random.nextBoolean()){
+        if (random.nextBoolean()) {
             jewellery = new Bow("medium");
-        }
-        else{
+        } else {
             jewellery = new Reticle();
         }
-        jewellery.setPrice(random.nextInt(1000)+100);
+        jewellery.setPrice(random.nextInt(1000) + 100);
         jewellery.setColour("Blue");
         return jewellery;
     }

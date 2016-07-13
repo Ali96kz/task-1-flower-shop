@@ -1,7 +1,6 @@
 package com.epam.zhagparov.flowershop.service;
 
 import com.epam.zhagparov.flowershop.entity.Bouquet;
-import com.epam.zhagparov.flowershop.entity.Flower;
 import com.epam.zhagparov.flowershop.entity.PresentFlower;
 
 import java.util.List;
@@ -17,6 +16,6 @@ public class Finder {
             }
         }
 
-       return flower;
+        return flower;
     }
 }

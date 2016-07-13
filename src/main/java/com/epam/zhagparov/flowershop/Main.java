@@ -6,10 +6,12 @@ import com.epam.zhagparov.flowershop.service.Finder;
 import com.epam.zhagparov.flowershop.service.Sorter;
 import com.sun.istack.internal.logging.Logger;
 
+import java.io.IOException;
+
 public class Main {
     final static Logger logger = Logger.getLogger(Main.class);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Sorter sorter = new Sorter();
         Finder finder = new Finder();
 
@@ -20,9 +22,9 @@ public class Main {
         logger.info(bouquet.toString());
 
         logger.info("Sort By Height \n");
-        logger.info(sorter.sortByHeight(bouquet).toString()+" \n");
+        logger.info(sorter.sortByHeight(bouquet).toString() + " \n");
 
         logger.info("Find flower between 9 and 12 \n");
-        logger.info(finder.findFlower(9,12, bouquet).getName()+"\n");
+        logger.info(finder.findFlower(9, 12, bouquet).getName() + "\n");
     }
 }

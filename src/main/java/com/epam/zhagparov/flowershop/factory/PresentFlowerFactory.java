@@ -1,7 +1,6 @@
 package com.epam.zhagparov.flowershop.factory;
 
 
-
 import com.epam.zhagparov.flowershop.entity.PresentFlower;
 import com.epam.zhagparov.flowershop.store.FlowerStore;
 
@@ -16,12 +15,11 @@ public class PresentFlowerFactory {
         flowerStore.fillFlowerStore();
     }
 
-    public PresentFlower getRandomFlower(int maxPrice, int minPrice, int minHeight, int maxHeight){
+    public PresentFlower getRandomFlower(int maxPrice, int minPrice, int minHeight, int maxHeight) {
         PresentFlower presentFlower;
-
         presentFlower = flowerStore.getRandomFlower();
-        presentFlower.setHeight(minHeight+random.nextInt(maxHeight-minHeight+1));
-        presentFlower.setPrice(minPrice+random.nextInt(maxPrice-minPrice+1));
+        presentFlower.setHeight(minHeight + random.nextInt(maxHeight - minHeight + 1));
+        presentFlower.setPrice(minPrice + random.nextInt(maxPrice - minPrice + 1));
 
         return presentFlower;
     }

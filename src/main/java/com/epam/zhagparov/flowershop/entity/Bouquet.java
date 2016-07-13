@@ -10,21 +10,23 @@ public class Bouquet {
     public Bouquet() {
     }
 
-    public void addJewelery(Jewellery jewellery){
+    public void addJewelery(Jewellery jewellery) {
         jewelleries.add(jewellery);
     }
-    public void addFlower(PresentFlower presentFlower){
+
+    public void addFlower(PresentFlower presentFlower) {
         flowers.add(presentFlower);
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        for(PresentFlower flower : flowers){
-                stringBuilder.append(flower.getName() + " " + flower.getPrice()+" "+flower.getHeight()+"\n");
+        for (PresentFlower flower : flowers) {
+            stringBuilder.append(flower.getName() + " " + flower.getPrice() + " " + flower.getHeight() + "\n");
         }
-        for(Jewellery jewellery : jewelleries){
-                stringBuilder.append(jewellery.getPrice()+" "+jewellery.getColour()+"\n");
-            }
+        for (Jewellery jewellery : jewelleries) {
+            stringBuilder.append(jewellery.getPrice() + " " + jewellery.getColour() + "\n");
+        }
         return stringBuilder.toString();
     }
 

@@ -1,6 +1,6 @@
 package com.epam.zhagparov.flowershop.entity;
 
-public abstract class PresentFlower extends Flower{
+public abstract class PresentFlower extends Flower {
     private int height;
 
     public int getHeight() {

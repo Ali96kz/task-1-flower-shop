@@ -1,25 +1,23 @@
 package com.epam.zhagparov.flowershop.service;
 
-import com.epam.zhagparov.flowershop.entity.BaseEntity;
 import com.epam.zhagparov.flowershop.entity.Bouquet;
-import com.epam.zhagparov.flowershop.entity.Flower;
 import com.epam.zhagparov.flowershop.entity.PresentFlower;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class Sorter {
-    public Bouquet sortByHeight(Bouquet bouquet){
+    public Bouquet sortByHeight(Bouquet bouquet) {
         List<PresentFlower> values = bouquet.getFlowers();
 
         Comparator<PresentFlower> flowerComparator = new Comparator<PresentFlower>() {
             public int compare(PresentFlower obj1, PresentFlower obj2) {
-                if(obj1.getHeight() > obj2.getHeight()) {
+                if (obj1.getHeight() > obj2.getHeight()) {
                     return 1;
-                }
-                else if(obj1.getHeight() < obj2.getHeight()) {
+                } else if (obj1.getHeight() < obj2.getHeight()) {
                     return -1;
-                }
-                else {
+                } else {
                     return 0;
                 }
 
@@ -28,7 +26,7 @@ public class Sorter {
 
         Collections.sort(values, flowerComparator);
         bouquet.setFlowers(values);
-        return  bouquet;
+        return bouquet;
     }
 
 

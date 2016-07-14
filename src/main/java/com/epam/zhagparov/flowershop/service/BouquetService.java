@@ -7,7 +7,18 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Sorter {
+public class BouquetService {
+    public PresentFlower findFlower(int min, int max, Bouquet bouquet) {
+        PresentFlower flower = null;
+        List<PresentFlower> values = bouquet.getFlowers();
+        for (int i = 0; i < values.size(); i++) {
+            flower = values.get(i);
+            if (flower.getHeight() < max && flower.getHeight() > min) {
+                return flower;
+            }
+        }
+        return flower;
+    }
     public Bouquet sortByHeight(Bouquet bouquet) {
         List<PresentFlower> values = bouquet.getFlowers();
 
@@ -28,6 +39,5 @@ public class Sorter {
         bouquet.setFlowers(values);
         return bouquet;
     }
-
 
 }
